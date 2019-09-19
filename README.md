@@ -6,8 +6,8 @@
 
 ## Supported tags and respective Dockerfile links
 
-* [`11.2.8-debian`, `debian`](https://github.com/fjudith/docker-draw.io/tree/11.2.8/debian)
-* [`11.2.8-alpine`, `alpine`](https://github.com/fjudith/docker-draw.io/tree/11.2.8/alpine)
+* [`11.2.9-debian`, `debian`](https://github.com/fjudith/docker-draw.io/tree/11.2.9/debian)
+* [`11.2.9-alpine`, `alpine`](https://github.com/fjudith/docker-draw.io/tree/11.2.9/alpine)
 
 ## Introduction
 
@@ -33,7 +33,7 @@ The Dockerfile builds from `tomcat:9-jre11-slim` and `tomcat:9-jre8-alpine (see 
 Run the container.
 
 ```bash
-docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 fjudith/draw.io
+docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 gosunilgo/draw.io
 ```
 
 Start a web browser session to <http://localhost:8080/?offline=1&https=0> or <https://localhost:8443/?offline=1>
