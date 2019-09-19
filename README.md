@@ -6,9 +6,10 @@
 
 ## Supported tags and respective Dockerfile links
 
-* [`11.2.9-debian`, `debian`](https://github.com/fjudith/docker-draw.io/tree/11.2.9/debian)
-* [`11.2.9-alpine`, `alpine`](https://github.com/fjudith/docker-draw.io/tree/11.2.9/alpine)
-
+* [`11.2.9-debian`, `debian`]
+* [`11.2.9-alpine`, `alpine`]
+* [`latest`, `alpine`] 
+*
 ## Introduction
 
 [draw.io](https://github.com/jgraph/drawio) (formerly Diagramly) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more. draw.io can import .vsdx, Gliffy™ and Lucidchart™ files .
@@ -34,6 +35,12 @@ Run the container.
 
 ```bash
 docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 gosunilgo/draw.io
+
+#debian
+docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 gosunilgo/draw.io:debian
+
+#alpine
+docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 gosunilgo/draw.io:alpine
 ```
 
 Start a web browser session to <http://localhost:8080/?offline=1&https=0> or <https://localhost:8443/?offline=1>
